@@ -1,0 +1,16 @@
+# 메신저 미리보기 허용
+User-agent: kakaotalk-scrap
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LINE
+Allow: /
+
+# 검색엔진 차단
+User-agent: *
+Disallow: /
