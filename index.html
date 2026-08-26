@@ -289,6 +289,22 @@ figure.fig figcaption{font-size:15px;color:var(--muted);line-height:1.72;text-al
 .rise{opacity:0;transform:translateY(20px)}
 @media (prefers-reduced-motion:reduce){.rise{opacity:1;transform:none}}
 .rise.in{opacity:1;transform:none;transition:opacity .8s cubic-bezier(.2,.7,.3,1), transform .8s cubic-bezier(.2,.7,.3,1)}
+
+  /* ── 참고 영상 (제출용 아님) ── */
+  .oldvid{margin-top:56px;padding-top:34px;border-top:1px dashed rgba(255,255,255,.20)}
+  .ovhead{display:flex;align-items:center;gap:14px;margin-bottom:16px;flex-wrap:wrap}
+  .ovtag{font-size:12px;letter-spacing:4px;font-weight:800;color:#5AAFCE;
+         border:1px solid rgba(90,175,206,.55);padding:5px 14px;border-radius:99px;white-space:nowrap}
+  .ovnote{font-size:15px;color:#8FA8B1}
+  .ovlead{font-size:clamp(16px,2.1vw,18.5px);line-height:1.85;color:#B9CCD4;margin-bottom:26px}
+  .ovlead b{color:#EAF3F6}
+  .vid.ov{background:transparent;border:1px dashed rgba(255,255,255,.26);margin-bottom:0}
+  .vid.ov .qr{width:100px;opacity:.9}
+  .ovbadge{display:inline-block;font-size:12.5px;letter-spacing:1.6px;font-weight:800;
+           color:#08222B;background:#5AAFCE;padding:4px 11px;border-radius:3px;margin-bottom:11px}
+  .vid.ov .t{font-size:clamp(18px,2.7vw,22px)}
+  .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.42);color:#DCEAEF}
+  .btn.ghost:hover{background:rgba(255,255,255,.08)}
 </style>
 
 <div id="bar"></div>
@@ -865,6 +881,25 @@ figure.fig figcaption{font-size:15px;color:var(--muted);line-height:1.72;text-al
       </div>
     </div>
 
+    <div class="oldvid rise">
+      <div class="ovhead">
+        <span class="ovtag">참 고</span>
+        <span class="ovnote">제출 서류에 포함된 설교가 아닙니다</span>
+      </div>
+      <p class="ovlead">오래된 영상 하나를 함께 놓습니다. <b>2017년 5월, 제가 성락성결교회 강단에서 드린 설교</b>입니다. 교회 채널에 지금도 남아 있더군요. 새로 드리는 설교보다, <b>그때 이 강단에서 무엇을 말했는지</b>가 저를 더 정확히 말해 줄 것 같아 덧붙입니다.</p>
+      <div class="vid ov">
+        <img class="qr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAAFyAQAAAADAX2ykAAAC4ElEQVR4nO2bUYrjMAyGJSXQxwR6gB7FvVmZI/UG9VF6gIX4sZCgRXKSdrLguCwNSaP/oUusj0EgZMuSFxnekae3cADj06IZ+1TGp0Uz9qmMT4tm7FMZnxbN2Kcyfg889iph+EEEX4spDLbzgv7ki95gd8w7FjUAfIMOwXEroS0Bz1Coidftf7ZoZ3zZ/xtqAHcFQICiRV83EtAOGUK/tpA/ZPxH4juIY1ShK9k1ukGv238y/j3e44H1rEU8tRn8jMj4VeRvJftx3IsB2GPB6K4H+dGcXswfMv4TvNcSWfZj1wDgpXkSXSyf/+/vZ4vyUZXxOfnL4zdD6BD86RFLK/6dvevzn4zPuf+egwQ6yK13PHX9qZX7UYfDTenJ54uMX0f+PlAPYdQld+tkuSvB68ZciXURf8j4D8QX3fXICKGMucsSVYRKt+ta77+M6/SfjE+Ln80pbWLdqhZiJ0sEIJ+3Sj/Eujb/yfi0OMbtuVD14e7jO/YnY/TX5j8Zn1NfXaTh3DehpaBSBURw8XNcW6f/+aL98nyLs6JSUldLZ1HF0s4qbL6w8fnCkRGqVj6LFqH6E5dZ6iuNLa/TfzI+i6+kqrofXvZn/jm9pq7dfzfM849O9U+PfowvTUpwd01u7W9Yf3KjPAzXIC2iC7kf9eV0vCmNa1Y/b7p/FVDq5370C645tpLEjK6ppYi283ejPLy0MbiRs3a8/96qcf6rVsvfDfLAv6Wx7A1NEXdlbXLY/vwV7ycBghTR0u7wOkmSwVJ8bregP/miN9gd8y62rjRrZaBfF4yXu1TNMZ2tf7VxPowvnPXoHX7AP19CL+pPriibjNo972vtZXRDVCs5f8PB+pPfweNZN2R5sHEZB0uObb7/Je8nWW/D/ixN6HCUTnRXcv/cfQl/yPiP3H+j9P6rXSs1tLFTafPf7fJo/787KUqb/5HxadGMfSrj06IZ+1TGp0Uz9qmMT4tm7LBz/i/v/n+4bDcV5wAAAABJRU5ErkJggg==" alt="2017년 성락성결교회 설교 QR 코드">
+        <div>
+          <div class="ovbadge">2017 · 성락성결교회 강단</div>
+          <div class="t">길 위에 서다</div>
+          <div class="m">요한복음 14장 6 – 11절 · 2017년 5월 14일 주일 2부<br>말씀삶공동체미디어</div>
+          <a class="btn ghost" href="https://youtu.be/eJmiMvULsTU?t=1623" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            설교 부분부터 보기
+          </a>
+        </div>
+      </div>
+    </div>
     <p class="muted rise" style="margin-top:22px;color:#8FA8B1">인쇄물로 보고 계신다면 QR 코드를 스마트폰 카메라로 비추시면 바로 재생됩니다.</p>
   </div>
 </section>
